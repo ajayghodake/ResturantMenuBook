@@ -1,4 +1,3 @@
-
 .book-container {
     display: flex;
     justify-content: center;
@@ -10,10 +9,9 @@
     padding: 0;
 }
 
-
 .book {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(253, 253, 253);
+    background: #ffcc03;
     width: 100%;
     height: 100%;
     padding: 0;

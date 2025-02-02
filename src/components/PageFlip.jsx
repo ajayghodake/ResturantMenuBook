@@ -1,6 +1,6 @@
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
-import './PageFlip.css';
+import styles from './PageFlip.module.css'; // Importing CSS Module
 
 // Import images from assets folder
 import page1 from "../assets/01Page_hare krishna.jpg";
@@ -18,11 +18,11 @@ const Book = () => {
     const pages = [page1, page2, page3, page4, page5, page6, page7, page8, page9, page10]; // Add more images if needed
 
     return (
-        <div className="book-container">
-            <HTMLFlipBook width={window.innerWidth} height={window.innerHeight} className="book" loading="lazy">
+        <div className={styles['book-container']}>
+            <HTMLFlipBook width={window.innerWidth} height={window.innerHeight} className={styles.book} loading="lazy">
                 {pages.map((page, index) => (
-                    <div key={index} className="page">
-                        <img src={page} alt={`Page ${index + 1}`} className="page-image" />
+                    <div key={index} className={styles.page}>
+                        <img src={page} alt={`Page ${index + 1}`} className={styles['page-image']} />
                     </div>
                 ))}
             </HTMLFlipBook>
