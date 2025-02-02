@@ -19,7 +19,7 @@ const Book = () => {
 
     return (
         <div className="book-container">
-            <HTMLFlipBook width={window.innerWidth} height={window.innerHeight} className="book">
+            <HTMLFlipBook width={window.innerWidth} height={window.innerHeight} className="book" loading="lazy">
                 {pages.map((page, index) => (
                     <div key={index} className="page">
                         <img src={page} alt={`Page ${index + 1}`} className="page-image" />
